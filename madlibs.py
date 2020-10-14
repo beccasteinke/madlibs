@@ -14,13 +14,11 @@ AWESOMENESS = [
     'smashing', 'lovely',
 ]
 
-
 @app.route('/')
 def start_here():
     """Display homepage."""
 
     return "Hi! This is the home page."
-
 
 @app.route('/hello')
 def say_hello():
@@ -64,7 +62,6 @@ def show_madlib():
     #     colors = colors + color + ' '
 
     return render_template("madlib.html", human=human, color=color, noun=noun, adjective=adjective)
-
 
 if __name__ == '__main__':
     # Setting debug=True gives us error messages in the browser and also
